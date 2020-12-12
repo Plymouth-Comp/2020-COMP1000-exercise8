@@ -1,54 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 
 namespace Exercise
 {
+    /// <summary>
+    /// In this exercise you are to work without using any looping structure but
+    /// rely only on recusive methods to solve the problems
+    /// </summary>
     public class Program
     {
-        public int OpenFile(string fileName)
-        { // opens a local file from a given path such as Exercise.Tests/files/text1.txt
-          // returns -2 if directory does not exist, -1 if file could not be opened; 0 if everything worked
-
-                return -1;
+        /// <summary>
+        /// Sum up all values from the array and return the resulting sum using recursive calls.
+        /// You are also not allowed to use object variables.
+        /// </summary>
+        /// <param name="values">A number of integers to sum up</param>
+        /// <param name="position">A value to checking the position in the array. 
+        /// Initially position will be the last index of the array.</param>
+        /// <returns></returns>
+        public int RecursiveSumFromLast(int [] values,int position)
+        {
+            return -10000;
         }
 
-        public string[] OpenFileAndReadLines(string fileName, int howMany)
-        { // opens a local file from a given path such as Exercise.Tests/files/text1.txt
-          // returns the first <howMany> lines from the given file or an empty string array if the file does not exist
-
-            return null;
+        /// <summary>
+        /// Sum up all values from the array and return the resulting sum using recursive calls.
+        /// You are also not allowed to use object variables.
+        /// </summary>
+        /// <param name="values">A number of integers to sum up</param>
+        /// <param name="position">A value to check the position in the array. 
+        /// Initially position will be zero.</param>
+        /// <returns></returns>
+        public int RecursiveSumFromFirst(int[] values, int position)
+        {
+            
+            return -10000;
         }
 
-        public int PersistentFileOpen(string fileName)
-        { // opens a local file from a given path such as Exercise.Tests/files/text1.txt
-          // returns -2 if directory does not exist, -1 if file could not be opened; 0 if everything worked
-          // return 1 if the file is already open
-
-
-            return -1;
+        /// <summary>
+        /// Adds all values from the list and returns the total sum.
+        /// 
+        /// Add up all values from the list without using extra functionality
+        /// </summary>
+        /// <param name="values">a list of float values to add</param>
+        /// <returns>the result of the summation</returns>
+        public float RecursiveSum(List<float> values)
+        {
+            return -10000;
         }
 
-        public int PersistentFileClose(string fileName)
-        { // closes a local file from a given path such as Exercise.Tests/files/text1.txt
-          // returns -1 if file could not be closed; 0 if everything worked
 
-            return -1;
-        }
-
-        public string[] PersistentFileRead(int numOfLines)
-        { // uses the last opened file and reads a given number of lines
-          // returns <numOfLines> lines from the given file or 
-          //  an empty string array if the file does not exist
-          // if called a second time it again reads from the beginning of the file
-
-
-            return new string[10];
-        }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Exercise 7!");
+            Console.WriteLine("Welcome to Exercise 8!");
         }
     }
 }
